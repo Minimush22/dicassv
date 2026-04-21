@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    gap: 20px;
+    background-image: url("./images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    flex-direction: column;
+    background-color: #eff1f369;
+}
+
+.header {
+    height: 237px;
+    background-image: url("./images/header.png");
+    background-position-x: 0;
+    background-repeat: repeat-x;
+    position: relative;
+    animation: scrollBackground 10s linear infinite;
+}
+
+@keyframes scrollBackground {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.header-title {
+    padding: 50px 0px 0px 20px;
+    color: black;
+}
+
+.title {
+    padding: 20px 0px 0px 20px;
+}
+
+.hightlights {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.hightlights-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.hightlight-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 270px;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.images {
+    width: 100px;
+}
+
+.logotipo {
+    width: 290px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.footer {
+    height: 337px;
+    background-color: #181818ed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.logotipo-footer {
+    width: 120px;
+}
+
+.text-footer {
+    color: rgb(97, 97, 97);
+    font-size: 14px;
+}
+
+.mods {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.mod-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+}
+
+.box-mod:hover .mod-mask {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.box-mod {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.box-mod-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-mod-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.back-link {
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
